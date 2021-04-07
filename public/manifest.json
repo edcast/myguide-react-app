@@ -1,0 +1,37 @@
+{
+  "name": "MyGuide Player Extension",
+  "description": "MyGuide Player Extension",
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "icons": {
+    "16": "/common/img/gicon16.png",
+    "48": "/common/img/gicon48.png",
+    "128": "/common/img/gicon128.png"
+  },
+  "browser_action": {
+    "default_icon": "/common/img/gicon128.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "index.html"
+  ],
+  "permissions": [
+    "storage"
+  ]
+}
