@@ -1,5 +1,3 @@
-# Snow Chrome Extension
-
 A small extension for making the browser a bit more christmassy ❄️
 
 ![2020-10-22 18 18 26](https://user-images.githubusercontent.com/31168035/96901117-21845200-1493-11eb-8af8-32972b1efe04.gif)
